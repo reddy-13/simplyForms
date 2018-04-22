@@ -27,8 +27,12 @@
 
         
         }
+        input{
+            color: red;
+        }
         input[type=email]{
             font-size: 20px;
+           
             
         }
         input[type=password]{
@@ -43,7 +47,12 @@
             color: darkmagenta;
             opacity: 1; /* Firefox */
         }
-        
+        #email{
+            color: slateblue;
+        }
+        #pass{
+            color: slateblue;
+        }
         
        
         #form{
@@ -63,12 +72,30 @@
         cursor: pointer;
         width: 100%;
         opacity: 0.9;
-}
+    }
 
-button:hover {
-    opacity:1;
-}
-
+    button:hover {
+        opacity:1;
+    }
+        .footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color:black;
+            color: gray;
+            text-align: center;
+        }
+        .footer a{
+            color: darkslategrey;
+            font-weight: 500;
+        }
+        .footer a:hover{
+            color: dimgrey;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    
       
       </style>
   </head>
@@ -80,15 +107,15 @@ button:hover {
                <form action="#">
                    <div class="form-group">
                        <label for="email">Email</label>
-                       <input class="form-control text" type="email" name="mail" placeholder="example@mail.com" required>
+                       <input class="form-control text" type="email" name="mail" id="email" placeholder="example@mail.com" required>
                    </div>
                     <div class="form-group">
                        <label for="password">Password</label>
-                       <input class="form-control text" type="password" name="pass" placeholder="Enter password" required>
+                       <input class="form-control text" id="pass" type="password" name="pass" placeholder="Enter password" required>
                    </div>
                       <div class="form-group">
                        <label for="cpassword">Confirm password</label>
-                       <input class="form-control text" type="password" name="cpass" placeholder="confirm password" required>
+                       <input class="form-control text" id="pass" type="password" name="cpass" placeholder="confirm password" required>
                    </div>
                    <div class="clearfix">
                        <button type="reset" class="btn btn-primary">Reset</button>
@@ -103,7 +130,9 @@ button:hover {
     
     
     
-
+    <div class="footer">
+        <p>Created by - <a href="http://greddy.tk" target="_blank">G Goutam Reddy</a> &copy;Apr - 2018</p>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
