@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" >
+
+    <title>SimplySignupForm</title>
+    <style>
+        
+
+        @import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+
+        
+        body{
+            
+          background: #ADA996;  /* fallback for old browsers */
+            
+          background: -webkit-linear-gradient(left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+          background: -o-linear-gradient(left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+          background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        font-family: 'Maven Pro', sans-serif;
+
+        
+        }
+        input[type=email]{
+            font-size: 20px;
+            
+        }
+        input[type=password]{
+            font-size: 20px;
+            
+        }
+            input[type=email]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: darkmagenta;
+            opacity: 1; /* Firefox */
+        }
+            input[type=password]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: darkmagenta;
+            opacity: 1; /* Firefox */
+        }
+        
+        
+        fr{
+            position: fixed;
+            display: block;
+            padding-top: 10px;
+            
+        }
+        #form{
+            background-color: #ff6b6b;
+            
+            padding: 5px 40px 40px 40px;
+        }
+        .text{
+            height: 33px;
+        }
+        button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+      
+      </style>
+  </head>
+  <body>
+   <div class="container">
+       <div class="row justify-content-md-center fr">
+           <div class="col-md-6 " id="form">
+               <center><b class="signup">Signup From</b></center>
+               <form action="#">
+                   <div class="form-group">
+                       <label for="email">Email</label>
+                       <input class="form-control text" type="email" name="mail" placeholder="example@mail.com" required>
+                   </div>
+                    <div class="form-group">
+                       <label for="password">Password</label>
+                       <input class="form-control text" type="password" name="pass" placeholder="Enter password" required>
+                   </div>
+                      <div class="form-group">
+                       <label for="cpassword">Confirm password</label>
+                       <input class="form-control text" type="password" name="cpass" placeholder="confirm password" required>
+                   </div>
+                   <div class="clearfix">
+                       <button type="reset" class="btn btn-primary">Reset</button>
+                       <button type="submit" class="btn btn-alert">Submit</button>
+                   </div>
+               </form>
+           </div>
+       </div>
+   </div>
+    
+    
+    
+    
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" ></script>
+  </body>
+</html>
